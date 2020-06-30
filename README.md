@@ -1,5 +1,5 @@
 ---
-typora-root-url: image
+typora-root-url: ./
 ---
 
 # Javagenericity
@@ -122,4 +122,4 @@ public class Test1 {
 
 4.泛型类型导致方法冲突
 
-![630730](/630730.png)
+![630730](/image/630730.png)
