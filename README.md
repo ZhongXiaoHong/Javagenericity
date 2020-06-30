@@ -1,3 +1,7 @@
+---
+typora-root-url: image
+---
+
 # Javagenericity
 > 泛型定义
 
@@ -115,3 +119,7 @@ public class Test1 {
 3.不能使用泛型静态变量
 
 ![630730](../../Desktop/Kotlin/630730.png)
+
+4.泛型类型导致方法冲突
+
+![630730](/630730.png)
