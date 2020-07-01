@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Test1<T> {
-    static  T t;
+
 
     static class A {
     }
@@ -27,7 +27,7 @@ public class Test1<T> {
 
         if(strs instanceof ArrayList<?>){}
 
-        if(strs instanceof  ArrayList<String>){}
+   //     if(strs instanceof  ArrayList<String>){}
 
     }
 
