@@ -30,6 +30,11 @@ Test<String>  "String" 实际类型参数，**Test<String>参数化类型 Parame
    ```java
    class Test<T>{
        T  t;
+       
+       
+       public T getKey(){ //TODO 不是泛型方法没有<T>
+           return t;
+       }
    }
    ```
 
@@ -48,7 +53,7 @@ Test<String>  "String" 实际类型参数，**Test<String>参数化类型 Parame
 3. 泛型方法
 
    ```java
-   <T> T fun(){
+   <T> T fun(){  //TODO <T>  表明是泛型方法
    
    }
    ```
