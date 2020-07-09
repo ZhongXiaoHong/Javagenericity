@@ -1,7 +1,3 @@
----
-typora-root-url: ./
----
-
 # Javagenericity
 > 泛型定义
 
@@ -78,7 +74,7 @@ public class Test1 {
 
 ```
 
-![630648](../../Desktop/Kotlin/630648.png)
+![630648](/image/630648.png)
 
 以上不按类优先排放会报错
 
@@ -114,11 +110,11 @@ public class Test1 {
 
 2.不能使用instanceof运算
 
-![630726](../../Desktop/Kotlin/630726.png)
+![630726](/image/630726.png)
 
 3.不能使用泛型静态变量
 
-![630730](../../Desktop/Kotlin/630730.png)
+![630730](/image/630730.png)
 
 4.泛型类型导致方法冲突
 
