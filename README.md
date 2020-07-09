@@ -26,6 +26,11 @@ Test<String>  "String" 实际类型参数，**Test<String>参数化类型 Parame
    ```java
    class Test<T>{
        T  t;
+       
+       
+       public T getKey(){ //TODO 不是泛型方法没有<T>
+           return t;
+       }
    }
    ```
 
@@ -44,7 +49,7 @@ Test<String>  "String" 实际类型参数，**Test<String>参数化类型 Parame
 3. 泛型方法
 
    ```java
-   <T> T fun(){
+   <T> T fun(){  //TODO <T>  表明是泛型方法
    
    }
    ```
@@ -74,7 +79,9 @@ public class Test1 {
 
 ```
 
-![630648](/image/630648.png)
+
+
+![630648](image/630648.png)
 
 以上不按类优先排放会报错
 
@@ -110,11 +117,20 @@ public class Test1 {
 
 2.不能使用instanceof运算
 
+
 ![630726](/image/630726.png)
 
 3.不能使用泛型静态变量
 
 ![630730](/image/630730.png)
+=======
+![630726](image/630726.png)
+
+3.不能使用泛型静态变量
+
+![630730](image/630730.png)
+
+>
 
 4.泛型类型导致方法冲突
 
