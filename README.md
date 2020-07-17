@@ -53,6 +53,12 @@ Test<String>  "String" 实际类型参数，**Test<String>参数化类型 Parame
    
    }
    ```
+   
+   ![](image\714639.png)
+
+**在泛型类中声明一个泛型方法，使用泛型T,注意这个T是一种全新的类型，可以与泛型类中声明的T不是同一种类型。**
+
+
 
 
 
@@ -132,11 +138,14 @@ public class Test1 {
 
 
 
+
 4.泛型类型导致方法冲突
 
 ![630730](/image/630730.png)
 
 
+
+5.静态域不能使用泛型
 
 
 
@@ -150,4 +159,37 @@ public class Test1 {
 
 
 > 在编译时期泛型不是已经被擦除了吗？ 为何通过反射还可以获取到T的实际类型
+
+
+
+
+
+
+> 为什么静态域不能使用泛型
+
+比如
+
+```java
+class  Test<T>{
+
+private  static  T instance
+}
+```
+
+为什么如此设计？就上例而言泛型要在创建Test对象的时候才确定，而static  T instance在加载类的时候已经要确定了，所以不能使用泛型，但是**静态方法本身就是泛型方法的除外**，如：
+
+```java
+class  Test<T>{
+
+private  static  <T> T getInstance(){
+
+}
+}
+```
+
+
+
+> 多类型限定符注意点
+
+![](image\714656.png)
 
