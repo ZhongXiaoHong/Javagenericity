@@ -1,3 +1,5 @@
+package p1;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +30,7 @@ public class BigPlate<T> extends AIPlate<T> {
 
     @Override
     public String toString() {
-        return "Plate{" +
+        return "p1.Plate{" +
                 "items=" + items +
                 '}';
     }

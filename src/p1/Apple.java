@@ -1,3 +1,5 @@
+package p1;
+
 public class Apple extends Fruit {
     private int id;
     public Apple(){
@@ -10,7 +12,7 @@ public class Apple extends Fruit {
 
     @Override
     public String toString() {
-        return "Apple{" +
+        return "p1.Apple{" +
                 "id=" + id +
                 '}';
     }

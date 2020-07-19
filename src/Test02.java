@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import p1.*;
 
 public class Test02 {
 
@@ -13,7 +13,7 @@ public class Test02 {
         Plate<?super Fruit> fruitPlate = new AIPlate<Food>();//TODO  允许这么操作
 
         fruitPlate.set(new Apple());//TODO  允许写
-        fruitPlate.set(new Food())//TODO  允许写
+       // fruitPlate.set(new p1.Food());//TODO  允许写
 
 
 

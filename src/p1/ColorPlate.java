@@ -1,13 +1,15 @@
+package p1;
+
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class AIPlate<T> implements Plate<T> {
+public class ColorPlate<K,T> extends BigPlate<T> {
 
-    private List<T> items = new ArrayList<>(10);
+    private List<T> items = new ArrayList<>(20);
 
 
-    public AIPlate(){
+    public ColorPlate(){
 
     }
 
@@ -28,7 +30,7 @@ public class AIPlate<T> implements Plate<T> {
 
     @Override
     public String toString() {
-        return "Plate{" +
+        return "p1.Plate{" +
                 "items=" + items +
                 '}';
     }

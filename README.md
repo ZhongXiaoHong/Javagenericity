@@ -133,7 +133,15 @@ public class Test1 {
 
 4.泛型类型导致方法冲突
 
-5.静态域不能使用泛型
+
+
+5.可以定义泛型数组，不能创建泛型数组
+
+
+
+6.不能捕获泛型对象，可以抛出泛型对象
+
+
 
 
 
@@ -164,3 +172,40 @@ private  static  <T> T getInstance(){
 > 多类型限定符注意点
 
 ![](image\714656.png)
+
+> 泛型数组
+
+可以定义泛型数组，不能创建泛型数组实例
+
+![](image\7142312.png)
+
+> 泛型与异常
+
+泛型类不能 extends Exception/Throwable
+
+![](image\7142315.png)
+
+不能捕获泛型对象
+
+![](image\7142323.png)
+
+
+
+> 泛型类型的继承规则
+
+
+
+
+
+> 练习题1
+
+```java
+ public static void main(String[] args) {
+        List<String> strs = new ArrayList<>();
+        List<Double> doubles = new ArrayList<>();
+        System.out.println(strs.getClass()==doubles.getClass());
+
+    }
+```
+
+输出的结果是true
